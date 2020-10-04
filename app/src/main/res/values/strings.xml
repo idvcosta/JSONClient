@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JSON Client</string>
+    <string name="loadFailure">Falha ao baixar dados.</string>
+</resources>
