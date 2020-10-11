@@ -17,5 +17,7 @@ public interface TodosContract {
 
     interface Presenter {
         void loadData();
+
+        void setView(TodosContract.View view);
     }
 }
