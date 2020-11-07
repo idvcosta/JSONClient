@@ -1,5 +1,7 @@
 package com.ingrid.jsonclient.model;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
+import com.ingrid.jsonclient.PhotoDetailsActivity;
 import com.ingrid.jsonclient.R;
 import com.ingrid.jsonclient.model.services.PhotoHolder;
 
@@ -41,7 +44,7 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotoHolder> implements 
 
         holder.titleTextPhotos.setText(photoItem.getTitle());
 
-        GlideUrl glideUrl = new GlideUrl(photoItem.getUrl(),
+        GlideUrl glideUrl = new GlideUrl(photoItem.getThumbnailUrl(),
                 new LazyHeaders.Builder()
                         .addHeader("User-Agent", "JSONClient")
                         .build());
@@ -63,6 +66,11 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotoHolder> implements 
     @Override
     public void onClick(View source) {
         PhotoItem item = (PhotoItem) source.getTag();
-        //TODO open photo details
+
+        Context context = source.getContext();
+        Intent intent = new Intent(context, PhotoDetailsActivity.class);
+        intent.putExtra(PhotoDetailsActivity.PARAM_PHOTO_ITEM,item);
+
+        context.startActivity(intent);
     }
 }

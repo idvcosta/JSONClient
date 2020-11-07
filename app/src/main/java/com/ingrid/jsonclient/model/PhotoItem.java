@@ -1,6 +1,8 @@
 package com.ingrid.jsonclient.model;
 
-public class PhotoItem {
+import java.io.Serializable;
+
+public class PhotoItem implements Serializable {
 
     private Long albumId;
     private Long id;
