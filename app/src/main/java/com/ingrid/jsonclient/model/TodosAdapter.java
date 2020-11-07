@@ -30,13 +30,12 @@ public class TodosAdapter extends RecyclerView.Adapter<TodoHolder> {
     @Override
     public void onBindViewHolder(TodoHolder holder, int position) {
         TodoItem todoItem = todos.get(position);
-
         holder.titleText.setText(todoItem.getTitle());
     }
 
 
-        @Override
-        public int getItemCount () {
-            return this.todos.size();
-        }
+    @Override
+    public int getItemCount() {
+        return this.todos.size();
     }
+}

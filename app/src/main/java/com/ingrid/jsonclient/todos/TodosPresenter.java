@@ -42,7 +42,7 @@ public class TodosPresenter implements TodosContract.Presenter {
     @Override
     public void setView(TodosContract.View view) {
         this.view = view;
-        if(todos != null){
+        if(todos != null && view!= null){
             view.hideLoading();
             view.showTodos(todos);
         }
