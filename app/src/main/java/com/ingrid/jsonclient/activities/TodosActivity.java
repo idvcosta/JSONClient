@@ -1,4 +1,4 @@
-package com.ingrid.jsonclient;
+package com.ingrid.jsonclient.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -9,8 +9,9 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.ingrid.jsonclient.R;
 import com.ingrid.jsonclient.model.TodoItem;
-import com.ingrid.jsonclient.model.TodosAdapter;
+import com.ingrid.jsonclient.activities.adapters.TodosAdapter;
 import com.ingrid.jsonclient.todos.TodosContract;
 import com.ingrid.jsonclient.todos.TodosPresenter;
 

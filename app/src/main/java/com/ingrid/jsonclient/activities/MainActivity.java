@@ -1,10 +1,12 @@
-package com.ingrid.jsonclient;
+package com.ingrid.jsonclient.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.ingrid.jsonclient.R;
 
 public class MainActivity extends AppCompatActivity {
 

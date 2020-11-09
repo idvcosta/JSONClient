@@ -1,4 +1,4 @@
-package com.ingrid.jsonclient.model;
+package com.ingrid.jsonclient.activities.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ingrid.jsonclient.R;
-import com.ingrid.jsonclient.model.services.TodoHolder;
+import com.ingrid.jsonclient.model.TodoItem;
 
 import java.util.List;
 

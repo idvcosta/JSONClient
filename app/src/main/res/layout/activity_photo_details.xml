@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PhotoDetailsActivity">
+    tools:context=".activities.PhotoDetailsActivity">
 
 
     <ImageView
-        android:id="@+id/photoDetailItem"
+        android:id="@+id/ivPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:src="@tools:sample/backgrounds/scenic"
@@ -18,7 +18,15 @@
         android:layout_margin="30dp"/>
 
     <TextView
-        android:id="@+id/textDetailItem"
+        android:id="@+id/tvTitleAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Oi"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Oi"

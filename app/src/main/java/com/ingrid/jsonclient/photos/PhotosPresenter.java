@@ -20,7 +20,7 @@ public class PhotosPresenter implements PhotosContract.Presenter {
         }
 
         PhotosRemoteRepository repository = new PhotosRemoteRepository();
-        repository.allPhotos().enqueue(new Callback<List<PhotoItem>>() {
+        repository.allPhotos(new Callback<List<PhotoItem>>() {
 
             @Override
             public void onResponse(Call<List<PhotoItem>> call, Response<List<PhotoItem>> response) {

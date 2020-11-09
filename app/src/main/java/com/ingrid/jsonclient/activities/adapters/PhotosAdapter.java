@@ -1,4 +1,4 @@
-package com.ingrid.jsonclient.model;
+package com.ingrid.jsonclient.activities.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
-import com.ingrid.jsonclient.PhotoDetailsActivity;
+import com.ingrid.jsonclient.activities.PhotoDetailsActivity;
 import com.ingrid.jsonclient.R;
-import com.ingrid.jsonclient.model.services.PhotoHolder;
+import com.ingrid.jsonclient.model.PhotoItem;
 
 import java.util.List;
 

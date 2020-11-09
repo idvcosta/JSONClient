@@ -1,4 +1,4 @@
-package com.ingrid.jsonclient.model.services;
+package com.ingrid.jsonclient.activities.adapters;
 
 import android.view.View;
 import android.widget.ImageView;

@@ -1,6 +1,6 @@
 package com.ingrid.jsonclient.model;
 
-import com.ingrid.jsonclient.model.services.PlaceholderService;
+import com.ingrid.jsonclient.model.services.JSONPlaceholderService;
 
 import java.util.List;
 
@@ -12,14 +12,14 @@ public class TodosRemoteRepository {
 
     private static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
 
-    private final PlaceholderService service;
+    private final JSONPlaceholderService service;
 
     public TodosRemoteRepository(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
-        service = retrofit.create(PlaceholderService.class);
+        service = retrofit.create(JSONPlaceholderService.class);
     }
 
     public Call<List<TodoItem>> allTodos() {
